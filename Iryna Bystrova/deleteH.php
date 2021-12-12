@@ -9,7 +9,7 @@ if($_GET['del']!=NULL)
 	{
 		$d=$_GET['d'];
 	mysqli_query($al, "DELETE FROM bookings WHERE id='$d'");
-	header("location:book.php");
+	header("location:mypackages.php");
 	}
 	elseif($_GET['dd'])
 		{
@@ -17,5 +17,3 @@ if($_GET['del']!=NULL)
 	mysqli_query($al, "DELETE FROM bookings WHERE id='$dd'");
 	header("location:orders.php");
 	}
-	
-?>

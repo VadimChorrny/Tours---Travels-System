@@ -31,15 +31,30 @@ if ($n != NULL && $am != NULL) {
 		.ashu {
 			border: 1px solid #333;
 			border-collapse: collapse;
-			color: #FFF;
 		}
 	</style>
 </head>
 
 <body>
-	<div id="header">
-		<div align="center"> <span class="headingMain">Online Tours &amp; Travels System</span> </div>
-	</div>
+	<nav class="navbar">
+		<div class="navbar-container container">
+			<input type="checkbox" name="" id="">
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+			<ul class="menu-items">
+				<li><a href="holiday.php">Manage Holiday</a></li>
+				<li><a href="orders.php">Orders</a></li>
+				<li><a href="changePasswordAdmin.php">Change Password</a></li>
+				<li><a href="logout.php">Logout</a></li>
+			</ul>
+			<h1 class="logo"><a href="ahome.php">Iryna Bystrova</a></h1>
+		</div>
+	</nav>
+	<br />
+	<br />
 	<br />
 	<br />
 	<div align="center"> <span class="subHead">Manage Holiday Packages<br />
@@ -62,8 +77,6 @@ if ($n != NULL && $am != NULL) {
 			</form>
 			<br />
 
-			<a href="ahome.php" class="link">HOME</a>
-			<br />
 
 
 			<span class="subHead">Current Holiday Packages<br /></span><br />
@@ -94,3 +107,11 @@ if ($n != NULL && $am != NULL) {
 </body>
 
 </html>
+
+<!--Creator Iryna Bystrova
+======================================
+| irynabystrova2002@gmail.com        |
+| +380 97 740 56 10                  |
+| https://github.com/irynabystrovaaa |
+======================================
+-->

@@ -1,0 +1,690 @@
+@charset "utf-8";
+/* CSS Document
+Author
+Iryna Bystrova  | irynabystrova2002@gmail.com | +380 97 740 56 10
+ */
+body {
+    margin: 0;
+    padding: 15px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Popins Medium";
+    src: url("./fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "Popins Regular";
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Medium";
+    src: url("./fonts/PlayfairDisplay-Medium.ttf");
+}
+
+.reg__wrapper .header h1 {
+    font-family: "Popins Medium";
+    font-weight: 600;
+}
+
+.reg__wrapper .content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.content-one h1 {
+    font-family: "Popins Medium";
+    font-size: 50px;
+}
+
+.content-one h2 {
+    font-family: "Popins Medium";
+    font-size: 35px;
+}
+
+.content-one h4 {
+    font-family: "Popins Regular";
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content-one a {
+    color: #4d47c3;
+    text-decoration: none;
+}
+
+/* Content Two */
+
+.content-two {
+    display: flex;
+    flex-direction: column;
+}
+.content-two form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-two h2 {
+    font-family: "Popins Medium";
+    font-size: 50px;
+}
+
+.content-two h3,
+a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #4d47c3;
+}
+
+.content-two input {
+    height: 60px;
+    width: 370px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f0efff;
+    outline: none;
+    box-shadow: none;
+    border-style: none;
+    margin-bottom: 50px;
+}
+
+.content-two input::-webkit-input-placeholder {
+    color: #aba7ff;
+}
+
+.content-two .login {
+    border-radius: 8px;
+    background-color: #4d47c3;
+    width: 370px;
+    height: 60px;
+}
+
+.content-two .login {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content img {
+    width: 300px;
+    height: 540px;
+}
+
+.login:active {
+    background-color: #312ab9;
+}
+
+/* HOME */
+
+.home__wrapper {
+    padding: 15px;
+}
+
+.home__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu__block {
+    display: flex;
+}
+
+.menu__block a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #b8becd;
+}
+
+#home-href {
+    color: #000;
+}
+
+#home-href:hover {
+    color: #b8becd;
+}
+
+.menu__block a:hover {
+    color: #000;
+}
+
+#logo {
+    font-family: "Popins Medium";
+    font-size: 40px;
+}
+
+/* MENU */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+
+#first-content {
+    width: 30%;
+}
+
+.content-block h1 {
+    font-family: "Playfair Medium";
+    font-size: 64px;
+}
+
+.content-block h3 {
+    color: #7d7987;
+    font-weight: 100;
+}
+
+.content-block img {
+    width: 800px;
+    height: 654px;
+}
+
+.content button {
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #fb8f1d;
+    outline: none;
+    box-shadow: none;
+    border-style: none;
+}
+
+.content-block a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TABLE */
+
+.booking__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__package {
+    margin-top: 100px;
+}
+
+.booking__package form {
+    width: 500px;
+    height: 640px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.booking__package h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+}
+
+.booking__package input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+}
+
+.booking__package input:focus {
+    border-bottom: 2px solid #78788c;
+}
+
+.booking__package p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.booking__package button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    width: 200px;
+    height: 60px;
+    background-color: #656577;
+    color: #fff;
+    transition: 1s;
+}
+
+/* PACKAGES */
+
+.package__list table {
+    width: 100%;
+    min-width: 400px;
+    margin: 30px auto 0 auto;
+}
+
+.package__list table thead {
+    background-color: #087f5b;
+}
+
+.package__list table th {
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.package__list table tr,
+td {
+    border: none;
+    height: 50px;
+    text-align: center;
+}
+
+.package__list table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+/* CHANGE PASSWORD */
+
+.change__form form {
+    margin: auto;
+    margin-top: 150px;
+    width: 800px;
+    background: #e6e6e6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 50px;
+}
+
+#inp-pass {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#text {
+    text-align: left;
+    font-family: "Popins Medium";
+    font-size: 30px;
+}
+
+#changePassword {
+    margin-top: 30px;
+    width: 350px;
+    height: 50px;
+    background-color: #fb8f1d;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#changePassword:hover {
+    background-color: #fdc180;
+    transition: 1s;
+    width: 360px;
+}
+
+.signin__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin__wrapper form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.signin__wrapper h2 {
+    font-family: "Popins Medium";
+    font-size: 50px;
+}
+
+.signin__wrapper input {
+    height: 60px;
+    width: 370px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f0efff;
+    outline: none;
+    box-shadow: none;
+    border-style: none;
+    margin-bottom: 50px;
+}
+
+.signin__wrapper .login {
+    border-radius: 8px;
+    background-color: #4d47c3;
+    width: 370px;
+    height: 60px;
+    color: #fff;
+}
+
+.signin__wrapper h3 {
+    text-align: center;
+    font-weight: 100;
+}
+
+/* NavBar AHOME */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    order: 1;
+    font-size: 2rem;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #117964;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+
+    .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines {
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items {
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li {
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-container input[type="checkbox"]:checked ~ .logo {
+        display: none;
+    }
+}
+
+.welcome-title {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.welcome-title h1 {
+    font-family: "Popins Medium";
+    font-size: 70px;
+}
+
+.welcome-title h2 {
+    font-family: "Popins Regular";
+    font-size: 50px;
+    color: #aaa;
+}
+
+.customers-booking {
+    width: 1200px;
+}
+
+/* OTHER */
+
+.design {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.labels {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+}
+.fields {
+    background-color: transparent;
+    border: none;
+    color: #5a5a5a;
+    padding: 10px;
+}
+.link {
+    font-family: "Segoe UI";
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(211, 99, 99);
+}
+a.link:active {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+a.link:visited {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+#home-auth {
+    filter: blur(0.1px);
+}
+
+.subHead {
+    font-family: "Arial Narrow";
+    color: #333;
+    font-size: 30px;
+}
+.info {
+    font-family: "Arial Narrow";
+    color: #333;
+    font-size: 16px;
+}
+a.cmd:link {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+a.cmd:active {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+a.cmd:visited {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+a.cmd:hover {
+    font-family: "Segoe UI";
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#home-page {
+    margin-top: 210px;
+}
